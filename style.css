@@ -1,0 +1,152 @@
+/* Fonte customizada */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Estilo do corpo da página */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #222;
+  background-color: #c3cceb ;
+  line-height: 1.6;
+}
+
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+}
+
+.nome {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/* Estilo do menu */
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #9cb6fd;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+section {
+  margin-bottom: 60px;
+  background: #fde6ee;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  color: #222;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin: 0.5rem 0 0.2rem;
+}
+
+input, textarea {
+  padding: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+
+
+/* Estilo dos botões */
+button {
+  background-color: #925b6e;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6b4251;
+}
+
+
+/* Botão do tema */
+.theme-toggle {
+  margin-left: 1rem;
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.theme-toggle:hover {
+  background: #666;
+} 
+
+/* Tema escuro */
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+body.dark header {
+  background-color: #000;
+}
+body.dark section {
+  background: #1e1e1e;
+}
+body.dark footer {
+  background-color: #000;
+}
+
+body.dark h1, body.dark h2, body.dark h3{
+  color: #fff;
+}
+
+
+/* Estilo para um tamanhos de telas menores */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .menu a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
